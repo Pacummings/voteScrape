@@ -24,6 +24,12 @@ voting_text = voting_text.split('\n')
 
 for line in voting_text:
 	line = line.strip()
+<<<<<<< HEAD
 	match_obj = re.match('\s*(\w+)\s\((\w\w)\),\s(\w+)',line)
 
 	
+=======
+	match_obj = re.match('(\w+)\s\\((\w)-(\w+)\\),\s(\w+\s*\w*)',line)
+
+senator.Senator(match_obj.group(1),match_obj.group(2),match_obj.group(3))
+>>>>>>> 429994e645bdaf32de18c616d644d4148ffc315d
