@@ -19,3 +19,9 @@ for i in range(len(letters)):
 voting_text = ''
 for i in range(1,4):
 	voting_text += letters[correct_index+i].get_text()
+
+voting_text = voting_text.split('\n')
+
+for line in voting_text:
+	line = line.strip()
+	match_obj = re.match('(\w+)\s\\((\w)-(\w+)\\),\s(\w+\s*\w*)',line)
