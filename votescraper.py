@@ -22,8 +22,12 @@ for i in range(1,4):
 
 voting_text = voting_text.split('\n')
 
+senators = []
+
 for line in voting_text:
 	line = line.strip()
 	match_obj = re.match('(\w+)\s\\((\w)-(\w+)\\),\s(\w+\s*\w*)',line)
 
-senator.Senator(match_obj.group(1),match_obj.group(2),match_obj.group(3))
+	if match_obj: 
+		s = senator.Senator(match_obj.group(1),match_obj.group(2),match_obj.group(3))
+		senators.append(s) 
