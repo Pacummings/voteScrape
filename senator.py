@@ -9,3 +9,7 @@ class Senator:
 
 	def add_vote(self, bill, vote):
 		self.voting_record[bill] = vote
+
+class Bill:
+	def __init__(self, number):
+		self.number = number
