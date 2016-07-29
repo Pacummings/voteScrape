@@ -3,6 +3,7 @@ import urllib
 from senator import *
 import re
 
+#Testing
 bills = []
 senators = {}
 
