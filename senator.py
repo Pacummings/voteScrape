@@ -13,3 +13,4 @@ class Senator:
 class Bill:
 	def __init__(self, number):
 		self.number = number
+		self.attributes = {'number':number}
