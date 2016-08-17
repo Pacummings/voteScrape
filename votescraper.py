@@ -6,6 +6,7 @@ import re
 votes = []
 senators = {}
 
+#Input your own numbers
 congress_number = 114
 session = 2
 
